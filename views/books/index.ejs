@@ -1,0 +1,10 @@
+<h2>Search books</h2>
+<form action='/books' method="GET">
+    <label>title</label>
+    <input type="text" name='title' >
+    <button type="submit">Search</button>
+</form>
+
+<% books.forEach(book => { %>
+ <div><%= books.title %> </div>
+<% }) %>
